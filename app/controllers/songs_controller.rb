@@ -1,4 +1,3 @@
-require 'pry'
 class SongsController < ApplicationController
   def new
 
@@ -11,7 +10,6 @@ class SongsController < ApplicationController
 
   def show
     @song = Song.find_by_id(:id)
-    binding.pry
   end
 
   def edit

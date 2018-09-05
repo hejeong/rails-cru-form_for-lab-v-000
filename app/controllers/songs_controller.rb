@@ -9,6 +9,7 @@ class SongsController < ApplicationController
   end
 
   def show
+    raise params.inspect
     @song = Song.find_by_id(:id)
   end
 

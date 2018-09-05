@@ -3,7 +3,7 @@ class SongsController < ApplicationController
 
   end
 
-  def index 
+  def index
 
   end
 

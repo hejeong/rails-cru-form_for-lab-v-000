@@ -5,7 +5,6 @@ class SongsController < ApplicationController
 
   def create
     @song = Song.create(params.require(:song).permit(:name, :author_id, :genre:id))
-    raise @song
     redirect_to song_path(@song)
   end
 

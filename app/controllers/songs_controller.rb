@@ -10,7 +10,6 @@ class SongsController < ApplicationController
 
   def show
     @song = Song.find_by_id(:id)
-    raise @song
   end
 
   def edit
@@ -29,3 +28,4 @@ class SongsController < ApplicationController
     params.require(:song).permit(*args)
   end
 end
+ 
